@@ -50,8 +50,8 @@ Extract Candidate Information:
 - Candidate Name (Full Name)
 - Email
 - Phone Number
-- LinkedIn URL
-- GitHub URL (if available)
+- LinkedIn URL (The full profile link. If a specific personal profile is not present, return an empty string. Do not return generic domain names like "linkedin.com" or "www.linkedin.com")
+- GitHub URL (The full profile link. If a specific personal profile is not present, return an empty string. Do not return generic domain names like "github.com" or "www.github.com")
 
 Generate:
 - Match Score (integer between 0 and 100)

@@ -66,7 +66,7 @@ export default function App() {
             ATS Resume Screener
           </h1>
           <p className="max-w-xl mx-auto text-base text-gray-500 font-medium">
-            Instantly evaluate candidate resumes against specific job description requirements using Google Gemini AI.
+            Analyze resumes, identify skill gaps, and evaluate candidate-job fit in seconds.
           </p>
         </header>
 

@@ -25,7 +25,12 @@ export default function App() {
 
     try {
       // 2. Make the HTTP POST request to our Flask server
-      const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const apiBaseUrl = (import.meta.env.VITE_API_URL && import.meta.env.VITE_API_URL !== 'undefined')
+        ? import.meta.env.VITE_API_URL
+        : 'http://localhost:5000';
+        
+      console.log("Calling API at:", `${apiBaseUrl}/analyze`);
+
       const response = await fetch(`${apiBaseUrl}/analyze`, {
         method: 'POST',
         body: formData, // Fetch automatically sets the content-type header to 'multipart/form-data'
